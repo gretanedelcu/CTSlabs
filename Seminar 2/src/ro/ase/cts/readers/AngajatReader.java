@@ -40,12 +40,4 @@ public class AngajatReader extends AplicantiReader{
 		return angajati;
 	}
 
-	@Override
-	public List<Aplicant> citesteAplicanti() throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
-
 }

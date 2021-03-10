@@ -17,10 +17,10 @@ public class ElevReader extends AplicantiReader{
 		// TODO Auto-generated constructor stub
 	}
 
-	public  List<Elev> readAplicanti() throws FileNotFoundException {
+	public  List<Aplicant> readAplicanti() throws FileNotFoundException {
 		Scanner input2 = new Scanner(new File(super.fileName));
 		input2.useDelimiter(",|\n");
-		List<Elev> elevi = new ArrayList<Elev>();
+		List<Aplicant> elevi = new ArrayList<Aplicant>();
 
 		while (input2.hasNext()) {
 			String nume = input2.next();
@@ -40,13 +40,6 @@ public class ElevReader extends AplicantiReader{
 		input2.close();
 		return elevi;
 	}
-
-	@Override
-	public List<Aplicant> citesteAplicanti() throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 
 
 }

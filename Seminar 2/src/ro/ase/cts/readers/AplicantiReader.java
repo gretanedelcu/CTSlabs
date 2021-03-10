@@ -15,5 +15,5 @@ public abstract class AplicantiReader {
 		this.fileName = fileName;
 	}
 
-	public abstract List<Aplicant> citesteAplicanti() throws FileNotFoundException;
+	public abstract List<Aplicant> readAplicanti() throws FileNotFoundException;
 }

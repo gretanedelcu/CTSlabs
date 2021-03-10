@@ -17,10 +17,10 @@ public class StudentReader extends AplicantiReader{
 		// TODO Auto-generated constructor stub
 	}
 
-	public List<Student> readAplicanti() throws FileNotFoundException, NumberFormatException {
+	public List<Aplicant> readAplicanti() throws FileNotFoundException, NumberFormatException {
 		Scanner input = new Scanner(new File(super.fileName));
 		input.useDelimiter(",|\n");
-		List<Student> studenti = new ArrayList<Student>();
+		List<Aplicant> studenti = new ArrayList<Aplicant>();
 
 		while (input.hasNext()) {
 			String nume = input.next();
@@ -38,12 +38,6 @@ public class StudentReader extends AplicantiReader{
 		}
 		input.close();
 		return studenti;
-	}
-
-	@Override
-	public List<Aplicant> citesteAplicanti() throws FileNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 
