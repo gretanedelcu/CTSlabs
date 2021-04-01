@@ -8,6 +8,11 @@ public class RezervareBuilder implements AbstractBuilder {
 		this.rezervare = new Rezervare(false,false,false,false,"",0);
 	}
 
+	public RezervareBuilder(int codRezervare) {
+		super();
+		this.rezervare = new Rezervare(false, false, false, false, "", codRezervare);
+	}
+	
 	public RezervareBuilder setAreMancareInclusa(boolean areMancareInclusa) {
 		rezervare.setAreMancareInclusa(areMancareInclusa);
 		return this;
