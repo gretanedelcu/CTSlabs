@@ -15,7 +15,7 @@ public class Client {
 	}
 	
 	public void platesteNota(float suma) {
-		System.out.println(numeClient + "a de platit " + suma + "lei");
+		System.out.println(numeClient + " are de platit " + suma + "lei");
 		strategy.realizeazaPlata(suma);
 	}
 }
