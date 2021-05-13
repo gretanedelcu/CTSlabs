@@ -1,0 +1,2 @@
+module exercitiu3FactoryMethod {
+}
