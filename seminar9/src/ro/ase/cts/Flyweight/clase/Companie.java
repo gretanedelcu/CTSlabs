@@ -1,6 +1,6 @@
 package ro.ase.cts.Flyweight.clase;
 
-public class Companie {
+public class Companie implements Flyweight {
 	private String numeCompanie;
 	private String nrTelefon;
 	private String CUI;
@@ -26,7 +26,7 @@ public class Companie {
 	}
 	
 	public void printeazaRezervare(Rezervare rezervare) {
-		System.out.println(rezervare.toString());
+		System.out.println(this.toString()+" "+rezervare.toString());
 		
 	}
 }

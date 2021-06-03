@@ -3,21 +3,29 @@ package ro.ase.cts.Flyweight.clase;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FlyweightFactory {
-	private Map<String,Flyweight> clienti;
+public class FlyweightFactory implements Flyweight {
+
+	private Map<String, Flyweight> clienti;
 	
 	public FlyweightFactory() {
 		super();
-		this.clienti = new HashMap<String,Flyweight>();
+		this.clienti=new HashMap<String, Flyweight>();
 	}
 
 	public Flyweight getClient(String nrTelefon) {
-		Flyweight flyweight = clienti.get(nrTelefon);
-		if(flyweight==null)
-		{
-			flyweight = new Client("Ion", nrTelefon, "ion@gmail.com");
-			clienti.put(nrTelefon, flyweight);
+		Flyweight client=clienti.get(nrTelefon);
+		if(client==null) {
+			// il adaugam in lista pt ca el nu exista inca
+			// il vom adauga o singura data
+			client=new Client("ClientNume", nrTelefon, "client@adresa.com");
+			clienti.put(nrTelefon, client);
 		}
-		return flyweight;	
+		return client;
+	}
+	
+	@Override
+	public void printeazaRezervare(Rezervare rezervare) {
+		// TODO Auto-generated method stub
+		
 	}
 }

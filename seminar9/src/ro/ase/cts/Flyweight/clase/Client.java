@@ -25,7 +25,7 @@ public class Client implements Flyweight{
 	}
 
 	public void printeazaRezervare(Rezervare rezervare) {
-		System.out.println(this.toString() + rezervare.toString());
+		System.out.println(this.toString()+" a efectuat rezervarea: "+rezervare.toString());
 	}
 
 }
